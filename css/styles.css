@@ -324,12 +324,35 @@ padding-bottom: 94px;
     margin-right: 0px;
 }
 
-.teamlist-flex .team-list::after {
-    display: block;
-    content: "";
-    outline: 2px solid red;
-    height: 20px;
+.button-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+        width: 40px;
+        border: none;
+        border-radius: 50px;
+        color: var(--secondaty-text-color);
+        background-color: var(--primary-bg-color);
+        cursor: pointer;
 
+
+}
+.button-social:hover,
+.button-social:focus {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+}
+
+.svg-social {
+fill: currentColor;
+}
+
+.button-panel {
+    display: flex;
+    justify-content:space-between;
+    margin-left: 32px;
+    margin-right: 32px;
 }
 .clients-section {
     margin-top: 94px;
