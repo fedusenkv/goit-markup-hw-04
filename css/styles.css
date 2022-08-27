@@ -6,6 +6,7 @@
     --primary-bg-color: rgba(255, 255, 255, 1);
     --footer-bg-color: rgba(47, 48, 58, 1);
     --secondary-bg-color: rgba(245, 244, 250, 1);
+    --icon-color: rgba(175, 177, 184, 1);
 }
 /*Header*/
 
@@ -323,20 +324,22 @@ padding-bottom: 94px;
 .teamlist-flex .team-list:last-child {
     margin-right: 0px;
 }
-
 .button-social {
-    display: flex;
+    margin-right: 10px;
     justify-content: center;
     align-items: center;
-    height: 40px;
-        width: 40px;
+    display: flex;
+    height: 44px;
+        width: 44px;
         border: none;
         border-radius: 50px;
-        color: var(--secondaty-text-color);
+        color: var(--icon-color);
         background-color: var(--primary-bg-color);
         cursor: pointer;
 
-
+}
+.button-social:last-child {
+    margin-right: 0;
 }
 .button-social:hover,
 .button-social:focus {
@@ -345,12 +348,16 @@ padding-bottom: 94px;
 }
 
 .svg-social {
+    align-items: center;
 fill: currentColor;
 }
 
+
+
 .button-panel {
     display: flex;
-    justify-content:space-between;
+    align-items: center;
+    margin-top: 16px;
     margin-left: 32px;
     margin-right: 32px;
 }
