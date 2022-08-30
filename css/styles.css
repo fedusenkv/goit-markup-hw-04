@@ -361,10 +361,13 @@ fill: currentColor;
 
 .button-panel {
     display: flex;
-    align-items: center;
     margin-top: 16px;
 justify-content: center;
 }
+.button-panel-footer {
+display: flex;
+}
+
 .clients-section {
 padding-top: 94px;
 padding-bottom: 94px;
@@ -372,13 +375,16 @@ padding-bottom: 94px;
 
 .button-clients {
     display: flex;
+    justify-content:space-between;
     align-items: center;
 
 
 }
 .svg-client {
+
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 
 .button-client {
     display: flex;
@@ -386,31 +392,33 @@ padding-bottom: 94px;
     align-items: center;
     width: 170px;
     height: 92px;
-    margin-right: 30px;
         background-color: var(--primary-bg-color);
         cursor: pointer;
         border-radius: 5px;
         border: 1px solid var(--icon-color);
 }
-.button-client:last-child {
-margin-right: 0;
-}
+
+
 .svg-client:hover,
 .svg-client:focus {
     filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
 }
 
 /*Footer*/
-
-.allfooter {
+.footer {
     display: flex;
-    align-items: center;
+}
+
+
+.footer-main {
+    float:left;
+    display: block;
+    margin-right: 70px;
+    padding-bottom: 
 
 }
 .footer-buttons {
-    margin-left: -120px;
-    
-    display: flex;
+    display: block;
 }
 .footer-top {
     align-items: center;
@@ -422,10 +430,11 @@ margin-right: 0;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    margin-left: 156px;
+    padding-top: 7px;
 
 }
 .button-social-footer {
+    margin-top: 20px;
     margin-right: 10px;
         justify-content: center;
         align-items: center;
@@ -445,10 +454,13 @@ background-color: var(--accent-color);
 }
 
 footer {
-    display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--footer-bg-color);
+}
+
+.allfooter {
+    display: flex;
 }
 .footer-nav {
         font-style: normal;
@@ -481,7 +493,6 @@ footer {
 address {
     margin-top: 20px;
 }
-
 .footer-list li {
     margin-bottom: 9px;
 }
@@ -640,8 +651,5 @@ color: var(--primary-bg-color);
 .portfolio-items {
         display: flex;
             flex-wrap: wrap;
-
-}
-.flex-container {
 
 }
