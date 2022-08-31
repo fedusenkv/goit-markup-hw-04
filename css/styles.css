@@ -633,18 +633,23 @@ color: var(--primary-bg-color);
 
 
 .portfolio-list {
+    display: block;
+    
     width: 370px;
     box-sizing: border-box;
         background: var(--primary-bg-color);
         
-        margin-right: 30px;
-        margin-bottom: 30px;
 }
 
 .portfolio-list:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.portfolio-list:nth-child(3n) {
+.portfolio-items li {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.portfolio-items li:nth-child(3n) 
+{
     margin-right: 0px;
 
 }
